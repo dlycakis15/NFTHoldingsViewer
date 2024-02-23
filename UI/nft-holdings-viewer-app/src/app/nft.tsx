@@ -38,7 +38,7 @@ export default function NftPage() {
       <div>
         <label>
           Enter Ethereum Wallet Address:
-          <input type="text" value={walletAddress} onChange={handleInputChange} />
+          <input style={{color: 'black'}} type="text" value={walletAddress} onChange={handleInputChange} />
         </label>
       </div>
       <div>

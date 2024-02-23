@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "http": {
+    "NFTHoldingsViewer": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
