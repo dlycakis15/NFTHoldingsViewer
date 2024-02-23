@@ -10,7 +10,7 @@ public class OwnedNFTsDto
     {
         return new OwnedNFTsDto()
         {
-            OwnedNfts = models.Select(OwnedNFTDto.ToDto)
+            OwnedNfts = models.Select(OwnedNFTDto.ToDto).DistinctBy(e => e.Id)
         };
     }
 }

@@ -19,6 +19,17 @@ builder.Services.AddScoped<IAlchemyApiClient, AlchemyApiClient>();
 
 builder.Services.AddScoped<INFTService, NFTService>();
 
+builder.Services.AddCors(options =>
+{
+    var allowedOrigin = builder.Configuration.GetSection("AllowedOrigins").Get<string[]>();
+    options.AddPolicy("DefaultCors", policy =>
+    {
+        policy.WithOrigins(allowedOrigin!)
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -33,6 +44,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("DefaultCors");
 
 app.UseHttpsRedirection();
 
