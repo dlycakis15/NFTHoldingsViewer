@@ -1,0 +1,93 @@
+{
+  "ownedNfts": [
+    {
+      "contract": {
+        "address": "0x049aba7510f45ba5b64ea9e658e342f904db358d"
+      },
+      "id": {
+        "tokenId": "0x3651c7a73d3eea6a637f10a28ad1d8d296223e321b06626b2b4eac48eef4af4e",
+        "tokenMetadata": {
+          "tokenType": "ERC721"
+        }
+      },
+      "balance": "1",
+      "title": "fiatlux.dao",
+      "description": "A CNS or UNS blockchain domain. Use it to resolve your cryptocurrency addresses and decentralized websites.",
+      "tokenUri": {
+        "gateway": "https://api.unstoppabledomains.com/metadata/24569386392027470642941547954531117289151615699440841392618929436637468602190",
+        "raw": "https://api.unstoppabledomains.com/metadata/24569386392027470642941547954531117289151615699440841392618929436637468602190"
+      },
+      "media": [
+        {
+          "gateway": "https://nft-cdn.alchemy.com/eth-mainnet/1fc1800b63bcfd283bfdcda8ce7d80c8",
+          "thumbnail": "https://res.cloudinary.com/alchemyapi/image/upload/thumbnailv2/eth-mainnet/1fc1800b63bcfd283bfdcda8ce7d80c8",
+          "raw": "https://api.unstoppabledomains.com/metadata/image-src/fiatlux.dao.svg",
+          "format": "svg+xml; charset=utf-8",
+          "bytes": 5558
+        }
+      ],
+      "metadata": {
+        "image": "https://api.unstoppabledomains.com/metadata/image-src/fiatlux.dao.svg",
+        "external_url": "https://unstoppabledomains.com/search?searchTerm=fiatlux.dao",
+        "tokenId": "24569386392027470642941547954531117289151615699440841392618929436637468602190",
+        "namehash": "0x3651c7a73d3eea6a637f10a28ad1d8d296223e321b06626b2b4eac48eef4af4e",
+        "background_color": "EDEDEE",
+        "image_url": "https://api.unstoppabledomains.com/metadata/image-src/fiatlux.dao.svg",
+        "name": "fiatlux.dao",
+        "description": "A CNS or UNS blockchain domain. Use it to resolve your cryptocurrency addresses and decentralized websites.",
+        "attributes": [
+          {
+            "value": "dao",
+            "trait_type": "Ending"
+          },
+          {
+            "value": 2,
+            "trait_type": "Level"
+          },
+          {
+            "value": 7,
+            "trait_type": "Length"
+          },
+          {
+            "value": 0,
+            "trait_type": "Subdomains"
+          },
+          {
+            "value": "standard",
+            "trait_type": "Type"
+          },
+          {
+            "value": "letter",
+            "trait_type": "Character Set"
+          },
+          {
+            "display_type": "number",
+            "value": 40,
+            "trait_type": "Purchase Price (USD)"
+          }
+        ]
+      },
+      "timeLastUpdated": "2024-01-26T19:16:26.174Z",
+      "contractMetadata": {
+        "name": "Unstoppable Domains",
+        "symbol": "UD",
+        "tokenType": "ERC721",
+        "contractDeployer": "0x721d3524ce6ff0c662f4c803f7b5e674debef449",
+        "deployedBlockNumber": 12779230,
+        "openSea": {
+          "floorPrice": 0.001,
+          "collectionName": "Unstoppable Domains",
+          "collectionSlug": "unstoppable-domains",
+          "safelistRequestStatus": "verified",
+          "imageUrl": "https://i.seadn.io/gcs/files/2b42a50925ee231f6858bcc927c21f71.png?w=500&auto=format",
+          "description": "Simplify your crypto currency payments with human readable names and build censorship resistant websites. Purchase your blockchain domains today!",
+          "twitterUsername": "unstoppableweb",
+          "lastIngestedAt": "2024-02-22T03:48:32.000Z"
+        }
+      }
+    }
+  ],
+  "pageKey": "MHgwNDlhYmE3NTEwZjQ1YmE1YjY0ZWE5ZTY1OGUzNDJmOTA0ZGIzNThkOjB4MzY1MWM3YTczZDNlZWE2YTYzN2YxMGEyOGFkMWQ4ZDI5NjIyM2UzMjFiMDY2MjZiMmI0ZWFjNDhlZWY0YWY0ZTpmYWxzZQ==",
+  "totalCount": 152,
+  "blockHash": "0x9b5e9efb6097ea0ffe48b606be7708445b525e9d5e9e34494c30255fa93d9a69"
+}
