@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFTHoldingsViewer.API", "NFTHoldingsViewer.API\NFTHoldingsViewer.API.csproj", "{8492EE77-4CBD-44FD-B0C8-F6EE27809FFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFTHoldingsViewer.Infrastructure", "NFTHoldingsViewer.Infrastructure\NFTHoldingsViewer.Infrastructure.csproj", "{83C8A7D0-FBCB-4BD5-A9BD-FE93AFE09814}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFTHoldingsViewer.Application", "NFTHoldingsViewer.Application\NFTHoldingsViewer.Application.csproj", "{9C5F2D60-0669-4FF9-8F34-0E42C1AAD871}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8492EE77-4CBD-44FD-B0C8-F6EE27809FFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8492EE77-4CBD-44FD-B0C8-F6EE27809FFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8492EE77-4CBD-44FD-B0C8-F6EE27809FFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8492EE77-4CBD-44FD-B0C8-F6EE27809FFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83C8A7D0-FBCB-4BD5-A9BD-FE93AFE09814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83C8A7D0-FBCB-4BD5-A9BD-FE93AFE09814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83C8A7D0-FBCB-4BD5-A9BD-FE93AFE09814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83C8A7D0-FBCB-4BD5-A9BD-FE93AFE09814}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C5F2D60-0669-4FF9-8F34-0E42C1AAD871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C5F2D60-0669-4FF9-8F34-0E42C1AAD871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C5F2D60-0669-4FF9-8F34-0E42C1AAD871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C5F2D60-0669-4FF9-8F34-0E42C1AAD871}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
