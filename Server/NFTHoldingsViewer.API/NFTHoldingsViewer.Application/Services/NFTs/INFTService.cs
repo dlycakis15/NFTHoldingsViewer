@@ -1,9 +1,9 @@
+using NFTHoldingsViewer.Application.Services.NFTs.DTOs;
 using NFTHoldingsViewer.Infrastructure.Alchemy;
-using NFTHoldingsViewer.Infrastructure.Alchemy.DTOs;
 
 namespace NFTHoldingsViewer.Application.Services.NFTs;
 
 public interface INFTService
 {
-    Task<Response<OwnedNFTs>> GetOwnedNFTsByAddress(string ownerAddress);
+    Task<Response<OwnedNFTsDto>> GetOwnedNFTsByAddress(string ownerAddress);
 }

@@ -1,4 +1,4 @@
-namespace NFTHoldingsViewer.Infrastructure.Alchemy.DTOs;
+namespace NFTHoldingsViewer.Infrastructure.Alchemy.Models;
 
 public class OwnedNFTs
 {
@@ -7,14 +7,12 @@ public class OwnedNFTs
 
 public class OwnedNFT
 {
-    public Contract Contract { get; set; }
     public Id Id { get; set; }
     public Metadata Metadata { get; set; }
-}
+    public string Balance { get; set; }
+    public string Title { get; set; }
 
-public class Contract
-{
-    public string Address { get; set; }
+    public string Description { get; set; }
 }
 
 public class Id
@@ -31,5 +29,6 @@ public class TokenMetadata
 public class Metadata
 {
     public string Image { get; set; }
+
     public string Name { get; set; }
 }

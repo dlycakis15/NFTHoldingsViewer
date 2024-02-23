@@ -1,5 +1,6 @@
+using NFTHoldingsViewer.Application.Services.NFTs.DTOs;
 using NFTHoldingsViewer.Infrastructure.Alchemy;
-using NFTHoldingsViewer.Infrastructure.Alchemy.DTOs;
+using NFTHoldingsViewer.Infrastructure.Alchemy.Models;
 
 namespace NFTHoldingsViewer.Application.Services.NFTs;
 
@@ -12,9 +13,24 @@ public class NFTService : INFTService
         _alchemyApiClient = alchemyApiClient;
     }
     
-    public async Task<Response<OwnedNFTs>> GetOwnedNFTsByAddress(string ownerAddress)
+    public async Task<Response<OwnedNFTsDto>> GetOwnedNFTsByAddress(string ownerAddress)
     {
         // add caching capabilities here
-        return await _alchemyApiClient.GetNFTsByAddress(ownerAddress);
+        var response = await _alchemyApiClient.GetNFTsByAddress(ownerAddress);
+
+        if (response == null)
+        {
+            return new Response<OwnedNFTsDto>()
+            {
+                Error = response.Error,
+                StatusCode = response.StatusCode
+            };
+        }
+
+        return new Response<OwnedNFTsDto>()
+        {
+            Data = OwnedNFTsDto.ToDtos(response.Data.OwnedNfts),
+            StatusCode = response.StatusCode
+        };
     }
 }

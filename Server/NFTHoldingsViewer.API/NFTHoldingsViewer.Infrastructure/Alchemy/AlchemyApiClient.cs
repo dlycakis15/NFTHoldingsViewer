@@ -1,6 +1,7 @@
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using Microsoft.Extensions.Configuration;
-using NFTHoldingsViewer.Infrastructure.Alchemy.DTOs;
+using NFTHoldingsViewer.Infrastructure.Alchemy.Models;
 
 namespace NFTHoldingsViewer.Infrastructure.Alchemy;
 
@@ -20,7 +21,8 @@ public class AlchemyApiClient : IAlchemyApiClient
     public async Task<Response<OwnedNFTs>> GetNFTsByAddress(string ownerAddress)
     {
         var httpRequestMessage =
-            new HttpRequestMessage(HttpMethod.Get, $"{_httpClient.BaseAddress}/{_getOwnedNFTsRouteName}?owner={ownerAddress}&pageSize=1");
+            new HttpRequestMessage(HttpMethod.Get,
+                $"{_httpClient.BaseAddress}/{_getOwnedNFTsRouteName}?owner={ownerAddress}&pageSize=20");
 
         var httpResponseMessage = await _httpClient.SendAsync(httpRequestMessage);
         
@@ -39,7 +41,11 @@ public class AlchemyApiClient : IAlchemyApiClient
         return new Response<OwnedNFTs>()
         {
             StatusCode = httpResponseMessage.StatusCode,
-            Value = JsonSerializer.Deserialize<OwnedNFTs>(contentStream)
+            Data = JsonSerializer.Deserialize<OwnedNFTs>(contentStream, new JsonSerializerOptions()
+            {
+                DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
+                PropertyNameCaseInsensitive = true
+            })
         };
     }
 }

@@ -1,12 +1,12 @@
 using System.Net;
-using NFTHoldingsViewer.Infrastructure.Alchemy.DTOs;
+using NFTHoldingsViewer.Infrastructure.Alchemy.Models;
 
 namespace NFTHoldingsViewer.Infrastructure.Alchemy;
 
 
 public class Response<T>
 {
-    public T Value { get; set; }
+    public T Data { get; set; }
     
     public string Error { get; set; }
     

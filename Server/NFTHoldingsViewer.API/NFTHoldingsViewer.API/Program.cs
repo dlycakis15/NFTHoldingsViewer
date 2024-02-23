@@ -3,6 +3,8 @@ using NFTHoldingsViewer.Infrastructure.Alchemy;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Configuration.AddJsonFile("appsettings.local.json");
+
 
 // Add services to the container.
 
