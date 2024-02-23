@@ -12,7 +12,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\" />
+      <ProjectReference Include="..\NFTHoldingsViewer.Application\NFTHoldingsViewer.Application.csproj" />
     </ItemGroup>
-
 </Project>

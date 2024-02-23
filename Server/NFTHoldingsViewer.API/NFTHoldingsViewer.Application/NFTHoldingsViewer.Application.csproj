@@ -6,4 +6,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\NFTHoldingsViewer.Infrastructure\NFTHoldingsViewer.Infrastructure.csproj" />
+    </ItemGroup>
+
 </Project>
