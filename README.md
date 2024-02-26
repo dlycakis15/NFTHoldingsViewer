@@ -25,10 +25,12 @@
 - Assumption: The external services and APIs (Alchemy) used for blockchain interaction will not exceed their rate limits under normal operation.
 - Risk: High traffic or intensive data requests could exceed API rate limits, causing service disruptions.
 - Mitigation: Introduce API rate limiting on APIs.
+  
 2. Blockchain NFT API (Alchemy)
 - Assumption: The external services and APIs (Alchemy) used for blockchain interaction will handle blockchain stability, availability and validity of nodes.
 - Risk: Relient on alchemy, which can come at a cost due to increase traffic or disruption to service due to the service being unavailable.
 - Mitigation: Introduce fallback options like data caching.
+  
 3.Data Consistency and Accuracy
 - Assumption: The data retrieved from the blockchain or through third-party APIs is accurate and up-to-date.
 - Consideration: Blockchain data, especially regarding NFT ownership and metadata, can change frequently. Implementing mechanisms to refresh and validate data regularly can help maintain accuracy.
