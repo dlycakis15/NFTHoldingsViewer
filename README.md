@@ -15,6 +15,7 @@
 - Next.js
 - .NET 7
 - Alchemy API
+- Digitalocean
 
 ## Challenges
 
@@ -22,7 +23,7 @@
 1. Struggled to get anything going for UI so decided to use **next.js** to bootstrap the UI to get me to a point where I could make the changes I needed. 
 
 ### Server
-1. Structuring the project/class: Even though its a simple project, I wanted to have the ability to switch parts out quickly e.g. Switching to a new NFT API or using a database, this can be done super easy. - Followed layer architecture
+1. Structuring the project/class: Even though its a simple project, I wanted to have the ability to switch parts out quickly e.g. Switching to a new NFT API or using a database, this can be done super easy. - Followed layer architecture.
 
 ## Assumptions
 
