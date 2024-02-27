@@ -37,10 +37,11 @@
 - Risk: Relient on alchemy, which can come at a cost due to increase traffic or disruption to service due to the service being unavailable.
 - Mitigation: Introduce fallback options like data caching.
   
-3.Data Consistency and Accuracy
-- Assumption: The data retrieved from the blockchain or through third-party APIs is accurate and up-to-date.
-- Consideration: Blockchain data, especially regarding NFT ownership and metadata, can change frequently. Implementing mechanisms to refresh and validate data regularly can help maintain accuracy.
+3. Data Consistency and Accuracy
+- Assumption: The data retrieved from the third-party APIs is accurate and up-to-date.
+- Risk: Blockchain data, especially regarding NFT ownership and metadata, can change frequently. Implementing mechanisms to refresh and validate data regularly can help maintain accuracy.
 - Mitigation: This is an issue when caching data from the Alchemy API, introducing webhook endpoints to clear data from cache.
+
 
 ## Infrastructure Diagram
 
