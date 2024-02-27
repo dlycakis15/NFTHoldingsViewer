@@ -22,7 +22,7 @@ public class AlchemyApiClient : IAlchemyApiClient
     {
         var httpRequestMessage =
             new HttpRequestMessage(HttpMethod.Get,
-                $"{_httpClient.BaseAddress}/{_getOwnedNFTsRouteName}?owner={ownerAddress}&pageSize=20");
+                $"{_httpClient.BaseAddress}/{_getOwnedNFTsRouteName}?owner={ownerAddress}");
 
         var httpResponseMessage = await _httpClient.SendAsync(httpRequestMessage);
         
