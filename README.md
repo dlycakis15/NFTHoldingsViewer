@@ -34,7 +34,7 @@
   
 2. Blockchain NFT API (Alchemy)
 - Assumption: The external services and APIs (Alchemy) used for blockchain interaction will handle blockchain stability, availability and validity of nodes.
-- Risk: Relient on alchemy, which can come at a cost due to increase traffic or disruption to service due to the service being unavailable.
+- Risk: Relient on alchemy, disruption to service due to the service being unavailable.
 - Mitigation: Introduce fallback options like data caching.
   
 3. Data Consistency and Accuracy
@@ -46,4 +46,11 @@
 ## Infrastructure Diagram
 
 - https://excalidraw.com/#room=ea2917e472762c703f97,G71Owt51F2D5oX6zWcWWoQ
+
+## Deployment
+
+https://nft-holdings-viewier-app-n5aua.ondigitalocean.app/
+
+- For the above to work, you will need the Server to be running through http://localhost:5085/.
+- The backend is also deployed on digitalocean, however, I had problems with setting up the DNS. Might be a propergation issue?
 
