@@ -14,7 +14,7 @@ export default function NftPage() {
   const fetchNFTs = async () => {
     try {
 
-      const res = await fetch(`http://localhost:5085/api/addresses/${walletAddress}/nfts`);
+      const res = await fetch(`https://api.nftholdings-api.com/api/addresses/${walletAddress}/nfts`);
       const data = await res.json();
       setNFTs(data?.data?.ownedNfts || []);
     } catch (error) {
